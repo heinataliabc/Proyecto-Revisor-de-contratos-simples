@@ -4,7 +4,7 @@
 
 > **Estudiante:** Heilyn Natalia Barco Caicedo.
 > **Nombre del proyecto:**  Contrato Claro — Revisor de contratos simples
-> **Fecha de inicio:** [2026-08-25]
+> **Fecha de inicio:** 2026-08-25
 
 ---
 
@@ -47,7 +47,7 @@ El corpus inicial de la herramienta será deliberadamente pequeño para facilita
 - Ley 820 de 2003 — Régimen de arrendamiento de vivienda urbana. Será la fuente principal para analizar contratos de arrendamiento de vivienda urbana, incluyendo elementos del contrato, obligaciones de las partes, canon, prórrogas y terminación. Fuente: SUIN-Juriscol /
 Función Pública. [Agregar enlace oficial].
 - Código Civil Colombiano — Ley 84 de 1873. Se utilizarán principalmente las disposiciones generales sobre contratos y obligaciones y los artículos relacionados con la compraventa, especialmente desde el artículo 1849. La herramienta utilizará únicamente los artículos necesarios para el alcance del proyecto. Fuente: SUIN-Juriscol / Secretaría del Senado. [Agregar enlace oficial].
-- Ley 1581 de 2012 — Protección de datos personales. Se tendrá en cuenta para las salvaguardas relacionadas con el tratamiento de información de los usuarios. Durante las pruebas se utilizarán contratos ficticios o datos anonimizados y la herramienta no almacenará información personal real. Fuente: SUIN-Juriscol. [Agregar enlace oficial].
+- Ley 1581 de 2012 — Protección de datos personales. Se tendrá en cuenta para las salvaguardas relacionadas con el tratamiento de información de los usuarios. Durante las pruebas se utilizarán contratos ficticios o datos anonimizados y la herramienta no almacenará información personal real. Fuente: SUIN-Juriscol.
 
 La herramienta deberá basar sus afirmaciones jurídicas en estas fuentes y citar la norma y, cuando sea posible, el artículo específico utilizado. Cuando el corpus no permita responder una cuestión, deberá indicarlo expresamente en lugar de inventar una respuesta.
 
@@ -62,22 +62,16 @@ ContratoClaro busca ayudar al usuario a comprender en lenguaje sencillo las prin
 Marca cada hito cuando lo termines. Los hitos siguen las sesiones del curso.
 
 - [ ] **M0 — Descripción y plan** *(con Sesión 1)*: Partes 1 y 2 de este README completas.
-- [ ] **M1 — Asistente con instrucciones v1** *(Sesión 1–2)*: redactaste las instrucciones (prompt de sistema) de tu asistente y funcionan en una herramienta gratuita de chat. crear el prompt de sistema que determine cómo debe analizar los contratos, citar las normas y reconocer sus limitaciones.
-- [ ] **M2 — Casos de prueba documentados** *(Sesión 2)*: tienes al menos 5 casos de prueba (donde antes fallaba) con resultados guardados en `docs/casos-de-prueba.md`. elaborar mínimo cinco contratos o situaciones ficticias para comprobar si la herramienta identifica correctamente riesgos, omisiones y cláusulas relevantes
+- [ ] **M1 — Asistente con instrucciones v1** *(Sesión 1–2)*: redactaste las instrucciones (prompt de sistema) de tu asistente y funcionan en una herramienta gratuita de chat. 
+- [ ] **M2 — Casos de prueba documentados** *(Sesión 2)*: tienes al menos 5 casos de prueba (donde antes fallaba) con resultados guardados en `docs/casos-de-prueba.md`.
 - [ ] **M3 — Corpus conectado (RAG)** *(Sesión 3)*: tu asistente **cita la fuente** normativa que usa y no inventa. Corpus cargado en `corpus/`.
 - [ ] **M4 — Interfaz web desplegada** *(Sesión 4)*: tu herramienta tiene **URL pública** (ver Parte 4) y tu primer usuario real la probó con evidencia.
 - [ ] **M5 — Análisis crítico y demo** *(Sesión 5)*: Parte 7 completada + presentación de 5 minutos.
 
 ### Bitácora de avance semanal
 | Semana | Qué hice | Enlace/captura | Dudas para la clase |
-| --- | --- | --- | --- |
-| 1Definí el problema jurídico, 
-los usuarios, el 
-alcance mínimo de la
-herramienta, el corpus
-normativo inicial y el plan
-de desarrollo.
- | | | |
+| 1 | Definí el problema jurídico, los usuarios, el  alcance mínimo de la herramienta, el corpus normativo inicial y el plan de desarrollo.| --- | --- |
+| 2 | | | |
 | 2 | | | |
 | 3 | | | |
 | 4 | | | |
