@@ -31,23 +31,30 @@ El usuario ideal es una persona en Colombia que esté próxima a firmar un contr
 
 ### 1.3 Qué hace y qué NO hace (alcance)
 | ✅ Sí hace | ❌ No hace |
-| Revisa contratos sencillos de compraventa de bienes muebles entre particulares. | No revisa compraventas de inmuebles, sociedades, acciones u operaciones comerciales complejas |
-| Revisa contratos de arrendamiento de vivienda urbana.] | [No revisa arrendamientos comerciales, rurales o contratos de leasing] |
-| [Permite al usuario pegar el texto de un contrato para analizarlo.] | [En la primera versión no analiza fotografías ni contratos escaneados mediante OCR.] |
+
 | [funcionalidad 2] | [fuera de alcance 2] |
 | [funcionalidad 2] | [fuera de alcance 2] |
-| [funcionalidad 2] | [fuera de alcance 2] |
-| [funcionalidad 2] | [fuera de alcance 2] |
+
+- Revisa contratos de arrendamiento de vivienda urbana. - 	No revisa arrendamientos comerciales, rurales o contratos de leasing.
+- Revisa contratos sencillos de compraventa de bienes muebles entre particulares. -	No revisa compraventas de inmuebles, sociedades, acciones u operaciones comerciales complejas.
+- Permite al usuario pegar el texto de un contrato para analizarlo. -	En la primera versión no analiza fotografías ni contratos escaneados mediante OCR.
+- Identifica las partes, objeto del contrato, precio, forma de pago, duración, obligaciones y causales de terminación. - No garantiza que un contrato sea totalmente válido, eficaz o ejecutable.
+- Explica las cláusulas importantes utilizando lenguaje sencillo.	- No sustituye el concepto o asesoría profesional de un abogado.
+- Identifica cláusulas que requieren atención y las clasifica como riesgo bajo, requiere revisión o riesgo alto.	- No decide definitivamente si el usuario debe o no debe firmar el contrato.
+- Señala información relevante que pueda faltar en el contrato. -	No negocia directamente con la otra parte ni modifica el contrato automáticamente.
+- Relaciona las alertas jurídicas con la norma utilizada para realizar el análisis.	- No inventa normas ni responde jurídicamente cuando el corpus no contiene una fuente aplicable.
+- Genera un resumen final con aspectos importantes y recomendaciones de revisión.	- No almacena contratos ni datos personales reales de los usuarios de prueba.
+
 *Consejo de abogado: un alcance pequeño y perfecto vale más que uno grande y roto.*
 
 ### 1.4 Marco jurídico y fuentes
 ¿Qué normas alimentan tu herramienta? Lista tu corpus normativo (leyes, decretos, sentencias — debe ser **pequeño y público**):
 El corpus inicial de la herramienta será deliberadamente pequeño para facilitar su verificación y reducir el riesgo de respuestas jurídicas incorrectas.
 
-- Ley 820 de 2003 — Régimen de arrendamiento de vivienda urbana. Será la fuente principal para analizar contratos de arrendamiento de vivienda urbana, incluyendo elementos del contrato, obligaciones de las partes, canon, prórrogas y terminación. Fuente: SUIN-Juriscol /
-Función Pública. [Agregar enlace oficial].
-- Código Civil Colombiano — Ley 84 de 1873. Se utilizarán principalmente las disposiciones generales sobre contratos y obligaciones y los artículos relacionados con la compraventa, especialmente desde el artículo 1849. La herramienta utilizará únicamente los artículos necesarios para el alcance del proyecto. Fuente: SUIN-Juriscol / Secretaría del Senado. [Agregar enlace oficial].
-- Ley 1581 de 2012 — Protección de datos personales. Se tendrá en cuenta para las salvaguardas relacionadas con el tratamiento de información de los usuarios. Durante las pruebas se utilizarán contratos ficticios o datos anonimizados y la herramienta no almacenará información personal real. Fuente: SUIN-Juriscol.
+- Ley 820 de 2003 — Régimen de arrendamiento de vivienda urbana. Será la fuente principal para analizar contratos de arrendamiento de vivienda urbana, incluyendo elementos del contrato, obligaciones de las partes, canon, prórrogas y terminación. Fuente: 
+Función Pública. [https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=8738].
+- Código Civil Colombiano — Ley 84 de 1873. Se utilizarán principalmente las disposiciones generales sobre contratos y obligaciones y los artículos relacionados con la compraventa, especialmente desde el artículo 1849. La herramienta utilizará únicamente los artículos necesarios para el alcance del proyecto. Fuente: Secretaría del Senado. [https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=39535].
+- Ley 1581 de 2012 — Protección de datos personales. Se tendrá en cuenta para las salvaguardas relacionadas con el tratamiento de información de los usuarios. Durante las pruebas se utilizarán contratos ficticios o datos anonimizados y la herramienta no almacenará información personal real. Fuente: https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=49981
 
 La herramienta deberá basar sus afirmaciones jurídicas en estas fuentes y citar la norma y, cuando sea posible, el artículo específico utilizado. Cuando el corpus no permita responder una cuestión, deberá indicarlo expresamente en lugar de inventar una respuesta.
 
@@ -61,7 +68,7 @@ ContratoClaro busca ayudar al usuario a comprender en lenguaje sencillo las prin
 
 Marca cada hito cuando lo termines. Los hitos siguen las sesiones del curso.
 
-- [ ] **M0 — Descripción y plan** *(con Sesión 1)*: Partes 1 y 2 de este README completas.
+- [ x] **M0 — Descripción y plan** *(con Sesión 1)*: Partes 1 y 2 de este README completas.
 - [ ] **M1 — Asistente con instrucciones v1** *(Sesión 1–2)*: redactaste las instrucciones (prompt de sistema) de tu asistente y funcionan en una herramienta gratuita de chat. 
 - [ ] **M2 — Casos de prueba documentados** *(Sesión 2)*: tienes al menos 5 casos de prueba (donde antes fallaba) con resultados guardados en `docs/casos-de-prueba.md`.
 - [ ] **M3 — Corpus conectado (RAG)** *(Sesión 3)*: tu asistente **cita la fuente** normativa que usa y no inventa. Corpus cargado en `corpus/`.
