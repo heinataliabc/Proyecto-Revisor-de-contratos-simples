@@ -33,8 +33,11 @@ El usuario ideal es una persona en Colombia que esté próxima a firmar un contr
 | ✅ Sí hace | ❌ No hace |
 | Revisa contratos sencillos de compraventa de bienes muebles entre particulares. | No revisa compraventas de inmuebles, sociedades, acciones u operaciones comerciales complejas |
 | Revisa contratos de arrendamiento de vivienda urbana.] | [No revisa arrendamientos comerciales, rurales o contratos de leasing] |
+| [Permite al usuario pegar el texto de un contrato para analizarlo.] | [En la primera versión no analiza fotografías ni contratos escaneados mediante OCR.] |
 | [funcionalidad 2] | [fuera de alcance 2] |
-
+| [funcionalidad 2] | [fuera de alcance 2] |
+| [funcionalidad 2] | [fuera de alcance 2] |
+| [funcionalidad 2] | [fuera de alcance 2] |
 *Consejo de abogado: un alcance pequeño y perfecto vale más que uno grande y roto.*
 
 ### 1.4 Marco jurídico y fuentes
