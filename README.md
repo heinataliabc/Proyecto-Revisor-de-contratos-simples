@@ -2,9 +2,9 @@
 
 **Pontificia Universidad Javeriana · 2026-II · Docente: Pedro Ardila**
 
-> **Estudiante:** [escribe aquí tu nombre completo]
-> **Nombre del proyecto:** [escribe aquí el nombre de tu herramienta]
-> **Fecha de inicio:** [AAAA-MM-DD]
+> **Estudiante:** Heilyn Natalia Barco Caicedo.
+> **Nombre del proyecto:**  Contrato Claro — Revisor de contratos simples
+> **Fecha de inicio:** [2026-08-25]
 
 ---
 
@@ -22,9 +22,12 @@ Bienvenido/a a tu repositorio de proyecto. **Este archivo es tu tablero de mando
 
 ### 1.1 El problema jurídico
 ¿Qué problema **real del derecho colombiano** resuelve tu herramienta? ¿Quién lo sufre hoy y cómo lo resuelve sin tu herramienta?
+En Colombia muchas personas celebran contratos sencillos, como contratos de arrendamiento de vivienda o compraventa de bienes muebles, sin comprender completamente el alcance jurídico de las cláusulas que están aceptando. El lenguaje jurídico puede dificultar la identificación de obligaciones, plazos, formas de pago, sanciones, causales de terminación y otras condiciones importantes. Esto puede ocasionar que una persona firme un contrato que contenga disposiciones desfavorables, información incompleta o condiciones que deberían ser aclaradas antes de contratar. Actualmente, una persona sin conocimientos jurídicos debe interpretar el documento por su cuenta, buscar información en internet o acudir a un abogado para obtener una revisión profesional. La herramienta propone realizar una revisión jurídica preliminar que facilite la comprensión del contrato y permita identificar posibles alertas antes de firmarlo.
 
 ### 1.2 Usuarios
 ¿Quién va a usarla? Describe a tu usuario ideal en una frase (ej. *"un arrendatario bogotano que le subieron el canon de arrendamiento más del límite legal"*). Recuerda que al final necesitas **al menos un usuario real** que la pruebe.
+El usuario ideal es una persona en Colombia que esté próxima a firmar un contrato sencillo de arrendamiento de vivienda urbana o de compraventa de un bien mueble y que no tenga conocimientos jurídicos especializados. Puede ser, por ejemplo, un arrendatario que quiere comprender las obligaciones y condiciones de su contrato antes de firmarlo, o una persona que va a comprar o vender un bien y quiere identificar los aspectos jurídicos más importantes del acuerdo. La herramienta está pensada principalmente para personas naturales y no para abogados especialistas o empresas que manejen contratos de alta complejidad.
+
 
 ### 1.3 Qué hace y qué NO hace (alcance)
 | ✅ Sí hace | ❌ No hace |
@@ -36,13 +39,20 @@ Bienvenido/a a tu repositorio de proyecto. **Este archivo es tu tablero de mando
 
 ### 1.4 Marco jurídico y fuentes
 ¿Qué normas alimentan tu herramienta? Lista tu corpus normativo (leyes, decretos, sentencias — debe ser **pequeño y público**):
-- [ ] Norma/sentencia 1: [nombre + enlace]
-- [ ] Norma/sentencia 2: [nombre + enlace]
+El corpus inicial de la herramienta será deliberadamente pequeño para facilitar su verificación y reducir el riesgo de respuestas jurídicas incorrectas.
+
+- Ley 820 de 2003 — Régimen de arrendamiento de vivienda urbana. Será la fuente principal para analizar contratos de arrendamiento de vivienda urbana, incluyendo elementos del contrato, obligaciones de las partes, canon, prórrogas y terminación. Fuente: SUIN-Juriscol /
+Función Pública. [Agregar enlace oficial].
+- Código Civil Colombiano — Ley 84 de 1873. Se utilizarán principalmente las disposiciones generales sobre contratos y obligaciones y los artículos relacionados con la compraventa, especialmente desde el artículo 1849. La herramienta utilizará únicamente los artículos necesarios para el alcance del proyecto. Fuente: SUIN-Juriscol / Secretaría del Senado. [Agregar enlace oficial].
+- Ley 1581 de 2012 — Protección de datos personales. Se tendrá en cuenta para las salvaguardas relacionadas con el tratamiento de información de los usuarios. Durante las pruebas se utilizarán contratos ficticios o datos anonimizados y la herramienta no almacenará información personal real. Fuente: SUIN-Juriscol. [Agregar enlace oficial].
+
+La herramienta deberá basar sus afirmaciones jurídicas en estas fuentes y citar la norma y, cuando sea posible, el artículo específico utilizado. Cuando el corpus no permita responder una cuestión, deberá indicarlo expresamente en lugar de inventar una respuesta.
 
 ### 1.5 Nombre y lema
 Un nombre corto para tu herramienta y una frase que explique qué hace (la usarás en la demo del día de presentaciones).
 
----
+ContratoClaro busca ayudar al usuario a comprender en lenguaje sencillo las principales condiciones de un contrato, identificar posibles riesgos y conocer qué aspectos debería revisar antes de tomar una decisión.
+
 
 ## 🗺️ Parte 2 — Plan de desarrollo
 
