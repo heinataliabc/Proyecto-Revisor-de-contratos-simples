@@ -62,8 +62,8 @@ ContratoClaro busca ayudar al usuario a comprender en lenguaje sencillo las prin
 Marca cada hito cuando lo termines. Los hitos siguen las sesiones del curso.
 
 - [ ] **M0 — Descripción y plan** *(con Sesión 1)*: Partes 1 y 2 de este README completas.
-- [ ] **M1 — Asistente con instrucciones v1** *(Sesión 1–2)*: redactaste las instrucciones (prompt de sistema) de tu asistente y funcionan en una herramienta gratuita de chat.
-- [ ] **M2 — Casos de prueba documentados** *(Sesión 2)*: tienes al menos 5 casos de prueba (donde antes fallaba) con resultados guardados en `docs/casos-de-prueba.md`.
+- [ ] **M1 — Asistente con instrucciones v1** *(Sesión 1–2)*: redactaste las instrucciones (prompt de sistema) de tu asistente y funcionan en una herramienta gratuita de chat. crear el prompt de sistema que determine cómo debe analizar los contratos, citar las normas y reconocer sus limitaciones.
+- [ ] **M2 — Casos de prueba documentados** *(Sesión 2)*: tienes al menos 5 casos de prueba (donde antes fallaba) con resultados guardados en `docs/casos-de-prueba.md`. elaborar mínimo cinco contratos o situaciones ficticias para comprobar si la herramienta identifica correctamente riesgos, omisiones y cláusulas relevantes
 - [ ] **M3 — Corpus conectado (RAG)** *(Sesión 3)*: tu asistente **cita la fuente** normativa que usa y no inventa. Corpus cargado en `corpus/`.
 - [ ] **M4 — Interfaz web desplegada** *(Sesión 4)*: tu herramienta tiene **URL pública** (ver Parte 4) y tu primer usuario real la probó con evidencia.
 - [ ] **M5 — Análisis crítico y demo** *(Sesión 5)*: Parte 7 completada + presentación de 5 minutos.
@@ -71,7 +71,13 @@ Marca cada hito cuando lo termines. Los hitos siguen las sesiones del curso.
 ### Bitácora de avance semanal
 | Semana | Qué hice | Enlace/captura | Dudas para la clase |
 | --- | --- | --- | --- |
-| 1 | | | |
+| 1Definí el problema jurídico, 
+los usuarios, el 
+alcance mínimo de la
+herramienta, el corpus
+normativo inicial y el plan
+de desarrollo.
+ | | | |
 | 2 | | | |
 | 3 | | | |
 | 4 | | | |
