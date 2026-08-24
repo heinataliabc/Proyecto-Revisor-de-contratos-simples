@@ -31,10 +31,8 @@ El usuario ideal es una persona en Colombia que esté próxima a firmar un contr
 
 ### 1.3 Qué hace y qué NO hace (alcance)
 | ✅ Sí hace | ❌ No hace |
-| --- | --- |
-| [Revisa contratos de arrendamiento de vivienda
-urbana.] | [No revisa arrendamientos comerciales,
-rurales o contratos de leasing] |
+| Revisa contratos sencillos de compraventa de bienes muebles entre particulares. | No revisa compraventas de inmuebles, sociedades, acciones u operaciones comerciales complejas |
+| Revisa contratos de arrendamiento de vivienda urbana.] | [No revisa arrendamientos comerciales, rurales o contratos de leasing] |
 | [funcionalidad 2] | [fuera de alcance 2] |
 
 *Consejo de abogado: un alcance pequeño y perfecto vale más que uno grande y roto.*
