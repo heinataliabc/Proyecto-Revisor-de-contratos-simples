@@ -31,20 +31,14 @@ El usuario ideal es una persona en Colombia que esté próxima a firmar un contr
 
 ### 1.3 Qué hace y qué NO hace (alcance)
 | ✅ Sí hace | ❌ No hace |
-
-| [funcionalidad 2] | [fuera de alcance 2] |
-| [funcionalidad 2] | [fuera de alcance 2] |
-
-- Revisa contratos de arrendamiento de vivienda urbana. - 	No revisa arrendamientos comerciales, rurales o contratos de leasing.
-- Revisa contratos sencillos de compraventa de bienes muebles entre particulares. -	No revisa compraventas de inmuebles, sociedades, acciones u operaciones comerciales complejas.
-- Permite al usuario pegar el texto de un contrato para analizarlo. -	En la primera versión no analiza fotografías ni contratos escaneados mediante OCR.
-- Identifica las partes, objeto del contrato, precio, forma de pago, duración, obligaciones y causales de terminación. - No garantiza que un contrato sea totalmente válido, eficaz o ejecutable.
-- Explica las cláusulas importantes utilizando lenguaje sencillo.	- No sustituye el concepto o asesoría profesional de un abogado.
-- Identifica cláusulas que requieren atención y las clasifica como riesgo bajo, requiere revisión o riesgo alto.	- No decide definitivamente si el usuario debe o no debe firmar el contrato.
-- Señala información relevante que pueda faltar en el contrato. -	No negocia directamente con la otra parte ni modifica el contrato automáticamente.
-- Relaciona las alertas jurídicas con la norma utilizada para realizar el análisis.	- No inventa normas ni responde jurídicamente cuando el corpus no contiene una fuente aplicable.
-- Genera un resumen final con aspectos importantes y recomendaciones de revisión.	- No almacena contratos ni datos personales reales de los usuarios de prueba.
-
+| Revisa contratos de arrendamiento de vivienda urbana. | No revisa contratos comerciales, laborales, societarios ni contratos de alta complejidad. |
+| Revisa contratos sencillos de compraventa de bienes muebles entre particulares. | No revisa compraventas de inmuebles. |
+| Identifica las partes, el objeto del contrato, el precio, la forma de pago, la duración y las obligaciones principales. | No reemplaza el análisis ni la asesoría profesional de un abogado. |
+| Explica las cláusulas importantes en lenguaje sencillo. | No decide definitivamente si el usuario debe firmar o no el contrato. |
+| Detecta posibles riesgos, omisiones o cláusulas que requieren especial atención. | No garantiza que el contrato sea completamente válido o ejecutable. |
+| Clasifica las alertas como riesgo bajo, requiere revisión o riesgo alto. | No negocia automáticamente el contrato con la otra parte. |
+| Señala información relevante que pueda faltar en el contrato. | No inventa normas ni responde jurídicamente cuando no encuentra una fuente aplicable. |
+| Relaciona sus observaciones con las normas jurídicas incluidas en el corpus. | No almacena datos personales reales de los usuarios de prueba. |
 *Consejo de abogado: un alcance pequeño y perfecto vale más que uno grande y roto.*
 
 ### 1.4 Marco jurídico y fuentes
