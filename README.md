@@ -56,14 +56,18 @@ La herramienta deberá basar sus afirmaciones jurídicas en estas fuentes y cita
 ### 1.5 Nombre y lema
 Un nombre corto para tu herramienta y una frase que explique qué hace (la usarás en la demo del día de presentaciones).
 
-ContratoClaro busca ayudar al usuario a comprender en lenguaje sencillo las principales condiciones de un contrato, identificar posibles riesgos y conocer qué aspectos debería revisar antes de tomar una decisión.
+Nombre de la herramienta: ContratoClaro
+
+Lema: “Entiende las cláusulas antes de firmar.”
+
+ContratoClaro es una herramienta de inteligencia artificial diseñada para realizar una revisión preliminar de contratos simples. Busca ayudar al usuario a comprender sus principales cláusulas, identificar posibles riesgos y conocer los aspectos que debería revisar antes de firmar, utilizando un lenguaje claro y sencillo.
 
 
 ## 🗺️ Parte 2 — Plan de desarrollo
 
 Marca cada hito cuando lo termines. Los hitos siguen las sesiones del curso.
 
-- [ x] **M0 — Descripción y plan** *(con Sesión 1)*: Partes 1 y 2 de este README completas.
+- [x] **M0 — Descripción y plan**] **M0 — Descripción y plan** *(con Sesión 1)*: Partes 1 y 2 de este README completas.
 - [ ] **M1 — Asistente con instrucciones v1** *(Sesión 1–2)*: redactaste las instrucciones (prompt de sistema) de tu asistente y funcionan en una herramienta gratuita de chat. 
 - [ ] **M2 — Casos de prueba documentados** *(Sesión 2)*: tienes al menos 5 casos de prueba (donde antes fallaba) con resultados guardados en `docs/casos-de-prueba.md`.
 - [ ] **M3 — Corpus conectado (RAG)** *(Sesión 3)*: tu asistente **cita la fuente** normativa que usa y no inventa. Corpus cargado en `corpus/`.
@@ -72,12 +76,12 @@ Marca cada hito cuando lo termines. Los hitos siguen las sesiones del curso.
 
 ### Bitácora de avance semanal
 | Semana | Qué hice | Enlace/captura | Dudas para la clase |
-| 1 | Definí el problema jurídico, los usuarios, el  alcance mínimo de la herramienta, el corpus normativo inicial y el plan de desarrollo.| --- | --- |
-| 2 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
+| --- | --- | --- | --- |
+| 1 | Definí el problema jurídico, los usuarios, el alcance de la herramienta, el corpus normativo inicial y el plan de desarrollo. También instalé Git, cloné el repositorio y verifiqué que estuviera actualizado con `git pull`. | README.md actualizado en GitHub / captura del repositorio | ¿Es adecuado limitar la primera versión a contratos de arrendamiento de vivienda urbana y compraventa de bienes muebles? ¿Qué herramienta recomienda el profesor para conectar el corpus normativo mediante RAG? |
+| 2 | Pendiente |  |  |
+| 3 | Pendiente |  |  |
+| 4 | Pendiente |  |  |
+| 5 | Pendiente |  |  |
 
 ---
 
