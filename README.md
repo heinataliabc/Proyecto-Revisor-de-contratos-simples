@@ -30,15 +30,16 @@ El usuario ideal es una persona en Colombia que esté próxima a firmar un contr
 
 
 ### 1.3 Qué hace y qué NO hace (alcance)
-| ✅ Sí hace | ❌ No hace |
-| Revisa contratos de arrendamiento de vivienda urbana. | No revisa contratos comerciales, laborales, societarios ni contratos de alta complejidad. |
+| ✅ Sí hace | ❌ No hace | 
+| --- | --- |
+| Revisa contratos de arrendamiento de vivienda urbana. | No revisa contratos comerciales, laborales ni de alta complejidad. |
 | Revisa contratos sencillos de compraventa de bienes muebles entre particulares. | No revisa compraventas de inmuebles. |
-| Identifica las partes, el objeto del contrato, el precio, la forma de pago, la duración y las obligaciones principales. | No reemplaza el análisis ni la asesoría profesional de un abogado. |
-| Explica las cláusulas importantes en lenguaje sencillo. | No decide definitivamente si el usuario debe firmar o no el contrato. |
-| Detecta posibles riesgos, omisiones o cláusulas que requieren especial atención. | No garantiza que el contrato sea completamente válido o ejecutable. |
-| Clasifica las alertas como riesgo bajo, requiere revisión o riesgo alto. | No negocia automáticamente el contrato con la otra parte. |
-| Señala información relevante que pueda faltar en el contrato. | No inventa normas ni responde jurídicamente cuando no encuentra una fuente aplicable. |
-| Relaciona sus observaciones con las normas jurídicas incluidas en el corpus. | No almacena datos personales reales de los usuarios de prueba. |
+| Identifica partes, objeto, precio, forma de pago, duración y obligaciones principales. | No reemplaza la asesoría profesional de un abogado. |
+| Explica las cláusulas importantes en lenguaje sencillo. | No decide definitivamente si el usuario debe firmar o no. |
+| Detecta posibles riesgos, omisiones o cláusulas que requieren atención. | No garantiza que el contrato sea completamente válido o ejecutable. |
+| Clasifica las alertas como riesgo bajo, requiere revisión o riesgo alto. | No inventa normas cuando no encuentra una fuente aplicable. |
+
+
 *Consejo de abogado: un alcance pequeño y perfecto vale más que uno grande y roto.*
 
 ### 1.4 Marco jurídico y fuentes
