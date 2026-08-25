@@ -77,7 +77,7 @@ Marca cada hito cuando lo termines. Los hitos siguen las sesiones del curso.
 ### Bitácora de avance semanal
 | Semana | Qué hice | Enlace/captura | Dudas para la clase |
 | --- | --- | --- | --- |
-| 1 | Definí el problema jurídico, los usuarios, el alcance de la herramienta, el corpus normativo inicial y el plan de desarrollo. También instalé Git, cloné el repositorio y verifiqué que estuviera actualizado con `git pull`. | README.md actualizado en GitHub / captura del repositorio | ¿Es adecuado limitar la primera versión a contratos de arrendamiento de vivienda urbana y compraventa de bienes muebles? ¿Qué herramienta recomienda el profesor para conectar el corpus normativo mediante RAG? |
+| 1 | Definí el problema jurídico, los usuarios, el alcance de la herramienta, el corpus normativo inicial y el plan de desarrollo. También instalé Git, cloné el repositorio y verifiqué que estuviera actualizado con `git pull`. | README.md actualizado en GitHub  | ¿Es adecuado limitar la primera versión a contratos de arrendamiento de vivienda urbana y compraventa de bienes muebles? ¿Qué herramienta recomienda el profesor para conectar el corpus normativo mediante RAG? |
 | 2 | Pendiente |  |  |
 | 3 | Pendiente |  |  |
 | 4 | Pendiente |  |  |
