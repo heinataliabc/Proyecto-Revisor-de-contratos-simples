@@ -78,7 +78,7 @@ Marca cada hito cuando lo termines. Los hitos siguen las sesiones del curso.
 | Semana | Qué hice | Enlace/captura | Dudas para la clase |
 | --- | --- | --- | --- |
 | 1 | Definí el problema jurídico, los usuarios, el alcance de la herramienta, el corpus normativo inicial y el plan de desarrollo. También instalé Git, cloné el repositorio y verifiqué que estuviera actualizado con `git pull`. | README.md actualizado en GitHub  | ¿Es adecuado limitar la primera versión a contratos de arrendamiento de vivienda urbana y compraventa de bienes muebles? ¿Qué herramienta recomienda el profesor para conectar el corpus normativo mediante RAG? |
-| 2 | Pendiente |  |  |
+| 2 | Pendiente || 2 | En clase estudié el funcionamiento básico de los modelos de lenguaje (LLM), las alucinaciones, la tokenización, los vectores y los embeddings. Comprendí que el lenguaje se transforma en tokens y representaciones numéricas para poder ser procesado por el modelo. | Apuntes y actividad de clase | ¿Cómo podemos aplicar estos conceptos para reducir las alucinaciones jurídicas en ContratoClaro? |  |  |
 | 3 | Pendiente |  |  |
 | 4 | Pendiente |  |  |
 | 5 | Pendiente |  |  |
