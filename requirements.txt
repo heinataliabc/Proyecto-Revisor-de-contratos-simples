@@ -1,0 +1,63 @@
+from pathlib import Path
+
+from langchain_core.documents import Document
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_community.vectorstores import FAISS
+
+
+CORPUS_DIR = Path("corpus")
+DB_DIR = "db"
+
+
+def cargar_corpus():
+    documentos = []
+
+    for archivo in CORPUS_DIR.glob("*.txt"):
+        contenido = archivo.read_text(encoding="utf-8")
+
+        if contenido.strip():
+            documentos.append(
+                Document(
+                    page_content=contenido,
+                    metadata={"source": archivo.name}
+                )
+            )
+
+    return documentos
+
+
+def construir_indice():
+    documentos = cargar_corpus()
+
+    if not documentos:
+        raise ValueError(
+            "No se encontraron archivos .txt con contenido dentro de corpus/"
+        )
+
+    divisor = RecursiveCharacterTextSplitter(
+        chunk_size=1000,
+        chunk_overlap=150
+    )
+
+    fragmentos = divisor.split_documents(documentos)
+
+    embeddings = HuggingFaceEmbeddings(
+        model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+    )
+
+    base_vectorial = FAISS.from_documents(
+        fragmentos,
+        embeddings
+    )
+
+    base_vectorial.save_local(DB_DIR)
+
+    print("Corpus indexado correctamente.")
+    print(f"Documentos encontrados: {len(documentos)}")
+    print(f"Fragmentos creados: {len(fragmentos)}")
+    print(f"Índice guardado en: {DB_DIR}/")
+
+
+if __name__ == "__main__":
+    construir_indice()
