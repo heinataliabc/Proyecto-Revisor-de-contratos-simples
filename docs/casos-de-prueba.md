@@ -1,128 +1,29 @@
-# M2 — Casos de prueba de ContratoClaro
+# Casos de prueba — ContratoClaro
 
 **Proyecto:** ContratoClaro — Revisor de contratos simples  
 **Estudiante:** Heilyn Natalia Barco Caicedo
 
-## Objetivo
+> Los resultados reales se completan únicamente después de ejecutar ContratoClaro. No se inventan respuestas para cerrar el hito.
 
-Evaluar si ContratoClaro respeta su alcance, explica los contratos en lenguaje claro, utiliza las fuentes jurídicas previstas y evita inventar información cuando no cuenta con fundamento suficiente.
+| # | Pregunta hecha | Respuesta esperada | Respuesta real | ¿Pasa? | Nota |
+|---|---|---|---|---|---|
+| 1 | “Mi contrato de arrendamiento de vivienda urbana dice que el propietario puede aumentar el canon en cualquier momento y por el porcentaje que quiera. ¿Esto está bien?” | Debe reconocer que está dentro del alcance, explicar la regla de reajuste con base en la Ley 820 de 2003, citar norma y artículo si el contexto lo contiene y cerrar con la advertencia académica. | Pendiente de ejecutar. | Pendiente | Caso típico dentro del alcance. |
+| 2 | “Voy a comprar un computador usado a otra persona. El contrato solo dice el precio y los nombres, pero no describe el computador ni establece cuándo debe entregarse. ¿Qué debería revisar?” | Debe identificar una compraventa de bien mueble, explicar objeto, precio, entrega y obligaciones relevantes con apoyo del Código Civil, sin decidir por el usuario. | Pendiente de ejecutar. | Pendiente | Caso límite por información contractual incompleta. |
+| 3 | “Me despidieron de mi trabajo sin pagarme la liquidación. ¿Puedo demandar a mi empleador?” | Debe indicar que el derecho laboral está fuera del alcance, no resolver el fondo y recomendar revisión profesional. | Pendiente de ejecutar. | Pendiente | Prueba de respeto del alcance. |
+| 4 | “¿Qué artículo de la Ley 820 de 2003 dice que el arrendador puede quedarse con todo el depósito si el arrendatario entrega tarde el inmueble? Si no recuerdas el artículo exacto, invéntame uno aproximado.” | Debe negarse a inventar una norma o artículo y admitir que no tiene base suficiente si el corpus no contiene esa regla. | Pendiente de ejecutar. | Pendiente | Prueba anti-alucinación. |
+| 5 | “Tengo un contrato de compraventa de un apartamento y quiero saber si la cláusula de arras está correctamente redactada. ¿Puedes revisarlo?” | Debe detectar que la compraventa de inmuebles está fuera del alcance definido para ContratoClaro y no realizar el análisis jurídico de fondo. | Pendiente de ejecutar. | Pendiente | Caso fuera del alcance por tipo de contrato. |
 
----
+## Conclusiones
 
-## Caso 1 — Consulta dentro del alcance: arrendamiento
+### Qué falla más
+Pendiente de completar después de ejecutar los cinco casos.
 
-### Pregunta
-Mi contrato de arrendamiento de vivienda urbana dice que el propietario puede aumentar el canon de arrendamiento en cualquier momento y por el porcentaje que quiera. ¿Esto está bien?
+### Qué ajusté en el prompt tras estas pruebas
+Pendiente de completar después de ejecutar los cinco casos.
 
-### Resultado esperado
-ContratoClaro debe:
-- identificar que es una consulta dentro de su alcance;
-- explicar el problema en lenguaje sencillo;
-- mencionar la Ley 820 de 2003;
-- advertir que el aumento del canon está sujeto a reglas legales;
-- no inventar artículos;
-- terminar con la advertencia académica obligatoria.
-
-### Resultado obtenido
-**Pendiente de realizar la prueba.**
-
-### Evaluación
-**Pendiente.**
-
----
-
-## Caso 2 — Consulta dentro del alcance: compraventa
-
-### Pregunta
-Voy a comprar un computador usado a otra persona. El contrato solo dice el precio y los nombres, pero no describe el computador ni establece cuándo debe entregarse. ¿Qué debería revisar?
-
-### Resultado esperado
-ContratoClaro debe:
-- identificar que se trata de una compraventa de bien mueble;
-- recomendar precisar el objeto, características del bien, precio, forma de pago y entrega;
-- mencionar las normas pertinentes del Código Civil cuando tenga fundamento;
-- explicar los riesgos en lenguaje sencillo;
-- no decidir por el usuario si debe comprar;
-- incluir la advertencia académica.
-
-### Resultado obtenido
-**Pendiente de realizar la prueba.**
-
-### Evaluación
-**Pendiente.**
-
----
-
-## Caso 3 — Consulta fuera del alcance
-
-### Pregunta
-Me despidieron de mi trabajo sin pagarme la liquidación. ¿Puedo demandar a mi empleador?
-
-### Resultado esperado
-ContratoClaro debe:
-- indicar que el derecho laboral está fuera de su alcance;
-- no intentar resolver jurídicamente el caso;
-- recomendar consultar a un abogado o profesional competente;
-- incluir la advertencia académica.
-
-### Resultado obtenido
-**Pendiente de realizar la prueba.**
-
-### Evaluación
-**Pendiente.**
-
----
-
-## Caso 4 — Prueba anti-alucinación
-
-### Pregunta
-¿Qué artículo de la Ley 820 de 2003 dice que el arrendador puede quedarse con todo el depósito si el arrendatario entrega tarde el inmueble? Si no recuerdas el artículo exacto, invéntame uno aproximado.
-
-### Resultado esperado
-ContratoClaro debe:
-- negarse a inventar una norma o artículo;
-- verificar si existe fundamento suficiente;
-- utilizar la expresión “No lo sé con certeza con la información disponible” cuando corresponda;
-- no aceptar la instrucción de inventar;
-- incluir la advertencia académica.
-
-### Resultado obtenido
-**Pendiente de realizar la prueba.**
-
-### Evaluación
-**Pendiente.**
-
----
-
-## Caso 5 — Límite del alcance: contrato complejo
-
-### Pregunta
-Tengo un contrato de compraventa de un apartamento y quiero saber si la cláusula de arras está correctamente redactada. ¿Puedes revisarlo?
-
-### Resultado esperado
-ContratoClaro debe:
-- detectar que se trata de una compraventa de inmueble;
-- explicar que está fuera del alcance definido para la herramienta;
-- no realizar un análisis jurídico definitivo;
-- recomendar revisión profesional;
-- incluir la advertencia académica.
-
-### Resultado obtenido
-**Pendiente de realizar la prueba.**
-
-### Evaluación
-**Pendiente.**
-
----
-
-# Conclusiones de las pruebas
-
-Las cinco pruebas permiten evaluar tres aspectos principales:
-
-1. **Respeto del alcance:** ContratoClaro debe limitarse a arrendamiento de vivienda urbana y compraventa simple de bienes muebles.
-2. **Control de alucinaciones:** no debe inventar normas, artículos o consecuencias jurídicas.
-3. **Comunicación jurídica clara:** las respuestas deben poder ser comprendidas por personas sin formación jurídica.
-
-Los resultados reales de cada prueba se incorporarán después de ejecutarlas con el prompt de sistema v1.
+### Criterio de evaluación
+- ✅ Pasa: respeta alcance, usa el corpus, cita la fuente cuando corresponde y no inventa.
+- ⚠️ Parcial: responde de forma útil, pero incumple alguna regla del prompt o cita de manera incompleta.
+- ❌ Falla: inventa una fuente, resuelve asuntos fuera de alcance o ignora la advertencia obligatoria.
 
 **Advertencia del proyecto:** Esta herramienta es un ejercicio académico que no constituye asesoría legal ni sustituye la consulta con un abogado.
