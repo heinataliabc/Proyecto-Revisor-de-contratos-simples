@@ -182,13 +182,13 @@ Estas salvaguardas son **obligatorias** y hacen parte de la evaluación:
 
 - **Advertencia visible obligatoria.** Tu interfaz debe mostrar, en lugar visible:
   > *"Esta herramienta es un ejercicio académico que no constituye asesoría legal ni sustituye la consulta con un abogado."*
-  - [ ] Implementada y visible en la interfaz
+  - [x] Implementada y visible en la interfaz
 - **Protección de datos (Ley 1581 de 2012).** Tu herramienta **no recolecta ni almacena datos personales reales** de usuarios de prueba. Los usuarios de prueba usan situaciones ficticias o datos inventados.
-  - [ ] Verificado: no guardo datos personales
+  - [x] Verificado: no guardo datos personales
 - **Corpus público.** Solo fuentes públicas: leyes, decretos, jurisprudencia publicada.
-  - [ ] Verificado
+  - [x] Verificado
 - **Anti-alucinaciones.** El asistente debe citar la fuente de cada afirmación jurídica y admitir cuando no la tiene.
-  - [ ] Casos de prueba donde la herramienta se niega a inventar
+  - [x] Casos de prueba donde la herramienta se niega a inventar
 
 ---
 
@@ -213,8 +213,8 @@ Requisitos de entrega del curso — todos deben estar ✅:
 
 - [ ] 🔗 **Solución funcionando**: resuelve el problema jurídico y está desplegada con URL pública.
 - [ ] 👤 **Usuario real**: al menos una persona externa al curso la usó, con evidencia (video corto o testimonio). Guarda la evidencia en `docs/evidencia-usuario.md`.
-- [ ] 📦 **Repositorio con historial**: este repo muestra tus avances semanales (commits + bitácora).
-- [ ] 🧠 **Análisis crítico**: Parte 7 completada.
+- [x] 📦 **Repositorio con historial**: este repo muestra tus avances semanales (commits + bitácora).
+- [x] 🧠 **Análisis crítico**: Parte 7 completada.
 - [ ] 📋 Partes 1–7 de este README completas y al día.
 
 ---
