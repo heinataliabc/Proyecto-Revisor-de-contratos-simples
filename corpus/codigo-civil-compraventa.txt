@@ -1,12 +1,8 @@
-CÓDIGO CIVIL COLOMBIANO
-Ley 84 de 1873 — selección sobre compraventa
+CÓDIGO CIVIL COLOMBIANO — LEY 84 DE 1873
+Selección sobre compraventa
 
-Fuente oficial:
-Secretaría Jurídica Distrital — Régimen Legal de Bogotá
+Fuente oficial: Secretaría Jurídica Distrital — Régimen Legal de Bogotá
 https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=39535
-
-Corpus seleccionado para el proyecto académico ContratoClaro.
-Se incluyen únicamente disposiciones relevantes para contratos sencillos de compraventa de bienes muebles entre particulares.
 
 ARTÍCULO 1849. CONCEPTO DE COMPRAVENTA.
 La compraventa es un contrato en que una de las partes se obliga a dar una cosa y la otra a pagarla en dinero. Aquélla se dice vender y ésta comprar. El dinero que el comprador da por la cosa vendida se llama precio.
@@ -15,12 +11,12 @@ ARTÍCULO 1880. OBLIGACIONES DEL VENDEDOR.
 Las obligaciones del vendedor se reducen en general a dos: la entrega o tradición, y el saneamiento de la cosa vendida.
 
 ARTÍCULO 1882. TIEMPO DE ENTREGA Y RETARDO.
-El vendedor es obligado a entregar la cosa vendida inmediatamente después del contrato, o a la época prefijada en él. Si por hecho o culpa suya retarda la entrega, el comprador podrá perseverar en el contrato o desistir de él, con derecho a indemnización de perjuicios según las reglas generales, en los términos previstos por la norma.
+El vendedor es obligado a entregar la cosa vendida inmediatamente después del contrato, o a la época prefijada en él. Si por hecho o culpa suya retarda la entrega, el comprador podrá perseverar en el contrato o desistir de él, con derecho a indemnización de perjuicios según las reglas generales.
 
 ARTÍCULO 1928. OBLIGACIÓN DEL COMPRADOR.
-La principal obligación del comprador es la de pagar el precio convenido.
+La principal obligación del comprador es pagar el precio convenido.
 
 ARTÍCULO 1929. LUGAR Y TIEMPO DEL PAGO.
-El precio deberá pagarse en el lugar y el tiempo estipulados, o en el lugar y el tiempo de la entrega, no habiendo estipulación en contrario.
+El precio deberá pagarse en el lugar y el tiempo estipulados o, a falta de estipulación, en el lugar y tiempo de la entrega.
 
-Nota del proyecto: ante cualquier duda de vigencia o alcance, consultar la fuente oficial enlazada arriba.
+Para cualquier asunto no cubierto por esta selección, ContratoClaro debe indicar que el corpus no contiene información suficiente y remitir a la fuente oficial.
