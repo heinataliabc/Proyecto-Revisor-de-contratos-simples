@@ -5,28 +5,71 @@ import requests
 import streamlit as st
 from dotenv import load_dotenv
 from langchain_community.vectorstores import FAISS
+from langchain_core.documents import Document
 from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 
 load_dotenv()
 
-DB_DIR = "db"
+CORPUS_DIR = Path("corpus")
+DB_DIR = Path("db")
 PROMPT_FILE = Path("prompt-sistema-v1.md")
-MODEL = os.getenv("OPENROUTER_MODEL", "openrouter/free")
+DEFAULT_MODEL = "openrouter/free"
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 
+def obtener_secreto(nombre, default=None):
+    valor = os.getenv(nombre)
+    if valor:
+        return valor
+
+    try:
+        if nombre in st.secrets:
+            return st.secrets[nombre]
+    except Exception:
+        pass
+
+    return default
+
+
 @st.cache_resource
-def cargar_indice():
+def cargar_o_construir_indice():
     embeddings = HuggingFaceEmbeddings(
         model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
     )
 
-    return FAISS.load_local(
-        DB_DIR,
-        embeddings,
-        allow_dangerous_deserialization=True,
+    if DB_DIR.exists():
+        try:
+            return FAISS.load_local(
+                str(DB_DIR),
+                embeddings,
+                allow_dangerous_deserialization=True,
+            )
+        except Exception:
+            pass
+
+    documentos = []
+    for archivo in CORPUS_DIR.glob("*.txt"):
+        contenido = archivo.read_text(encoding="utf-8").strip()
+        if contenido:
+            documentos.append(
+                Document(
+                    page_content=contenido,
+                    metadata={"source": archivo.name},
+                )
+            )
+
+    if not documentos:
+        raise RuntimeError("No se encontraron archivos .txt con contenido en corpus/.")
+
+    divisor = RecursiveCharacterTextSplitter(
+        chunk_size=1000,
+        chunk_overlap=150,
     )
+    fragmentos = divisor.split_documents(documentos)
+
+    return FAISS.from_documents(fragmentos, embeddings)
 
 
 def cargar_prompt():
@@ -40,7 +83,7 @@ def cargar_prompt():
 
 
 def buscar_contexto(pregunta):
-    indice = cargar_indice()
+    indice = cargar_o_construir_indice()
     documentos = indice.similarity_search(pregunta, k=4)
 
     contexto = []
@@ -54,11 +97,13 @@ def buscar_contexto(pregunta):
 
 
 def consultar_openrouter(pregunta, contexto):
-    api_key = os.getenv("OPENROUTER_API_KEY")
+    api_key = obtener_secreto("OPENROUTER_API_KEY")
+    modelo = obtener_secreto("OPENROUTER_MODEL", DEFAULT_MODEL)
 
     if not api_key:
         raise RuntimeError(
-            "Falta OPENROUTER_API_KEY. Configúrala en un archivo .env local."
+            "Falta OPENROUTER_API_KEY. Configúrala como secreto de Streamlit "
+            "o variable de entorno local."
         )
 
     prompt_base = cargar_prompt()
@@ -94,7 +139,7 @@ REGLA RAG OBLIGATORIA:
             "X-Title": "ContratoClaro - Proyecto académico",
         },
         json={
-            "model": MODEL,
+            "model": modelo,
             "messages": mensajes,
             "temperature": 0.1,
         },
@@ -125,12 +170,6 @@ st.write(
     "Revisión preliminar de contratos de arrendamiento de vivienda urbana y "
     "compraventa sencilla de bienes muebles entre particulares."
 )
-
-if not Path(DB_DIR).exists():
-    st.error(
-        "Todavía no existe el índice del corpus. Ejecuta primero: python build_corpus.py"
-    )
-    st.stop()
 
 pregunta = st.text_area(
     "Escribe tu consulta o pega una cláusula del contrato:",
