@@ -1,20 +1,17 @@
-LEY 1581 DE 2012
-Protección de datos personales
+LEY 1581 DE 2012 — PROTECCIÓN DE DATOS PERSONALES
 
-Fuente oficial:
-Departamento Administrativo de la Función Pública — Gestor Normativo
+Fuente oficial: Departamento Administrativo de la Función Pública — Gestor Normativo
 https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=49981
 
-Corpus seleccionado para el proyecto académico ContratoClaro.
-Esta selección se usa como salvaguarda para el tratamiento de información de usuarios y para recordar que las pruebas deben emplear datos ficticios o anonimizados.
+Selección oficial relevante para las salvaguardas de ContratoClaro.
 
 ARTÍCULO 9. AUTORIZACIÓN DEL TITULAR.
-Sin perjuicio de las excepciones previstas en la ley, en el Tratamiento se requiere la autorización previa e informada del Titular, la cual deberá ser obtenida por cualquier medio que pueda ser objeto de consulta posterior.
+Sin perjuicio de las excepciones previstas en la ley, en el tratamiento se requiere la autorización previa e informada del titular, obtenida por un medio que pueda ser objeto de consulta posterior.
 
 ARTÍCULO 12. DEBER DE INFORMAR AL TITULAR.
-Al solicitar la autorización, el Responsable del Tratamiento debe informar de manera clara y expresa el tratamiento al cual serán sometidos los datos y su finalidad; el carácter facultativo de ciertas respuestas cuando correspondan a datos sensibles o de niñas, niños y adolescentes; los derechos del Titular; y la identificación y datos de contacto del Responsable del Tratamiento.
+Al solicitar la autorización, el responsable del tratamiento debe informar de manera clara y expresa el tratamiento al cual serán sometidos los datos y su finalidad, los derechos que le asisten al titular y la identificación y datos de contacto del responsable.
 
 SALVAGUARDA DEL PROYECTO.
-ContratoClaro no debe solicitar ni almacenar datos personales reales durante las pruebas académicas. Los casos de prueba deben usar situaciones ficticias, nombres inventados o información anonimizada.
+Las pruebas de ContratoClaro deben usar situaciones ficticias, nombres inventados o información anonimizada. El proyecto no debe almacenar datos personales reales de los usuarios de prueba.
 
-Nota del proyecto: ante cualquier duda de vigencia o alcance, consultar la fuente oficial enlazada arriba.
+Para cualquier asunto no cubierto por esta selección, ContratoClaro debe indicar que el corpus no contiene información suficiente y remitir a la fuente oficial.
