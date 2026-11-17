@@ -1,12 +1,20 @@
 LEY 820 DE 2003
 Régimen de arrendamiento de vivienda urbana
 
-Fuente oficial: Departamento Administrativo de la Función Pública - Gestor Normativo.
+Fuente oficial:
+Departamento Administrativo de la Función Pública — Gestor Normativo
+https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=8738
 
 Corpus seleccionado para el proyecto académico ContratoClaro.
-Se incluyen únicamente las disposiciones relevantes para la revisión preliminar de contratos de arrendamiento de vivienda urbana.
+Se incluyen únicamente disposiciones relevantes para la revisión preliminar de contratos de arrendamiento de vivienda urbana.
 
-ARTÍCULOS INCLUIDOS:
-Artículos 1, 3 a 6, 8, 9, 15 a 24 y demás disposiciones estrictamente necesarias para el alcance del proyecto.
+ARTÍCULO 3. FORMA DEL CONTRATO.
+El contrato de arrendamiento para vivienda urbana puede ser verbal o escrito. En uno u otro caso, las partes deben ponerse de acuerdo al menos acerca de los siguientes puntos: nombre e identificación de los contratantes; identificación del inmueble; identificación de la parte arrendada cuando corresponda; precio y forma de pago; servicios, cosas o usos conexos y adicionales; término de duración; y parte a cuyo cargo esté el pago de los servicios públicos.
 
-A continuación se reproduce el texto oficial seleccionado:
+ARTÍCULO 18. RENTA DE ARRENDAMIENTO.
+El precio mensual del arrendamiento será fijado por las partes en moneda legal, pero no podrá exceder el uno por ciento (1%) del valor comercial del inmueble o de la parte que se dé en arriendo. La estimación comercial para estos efectos no podrá exceder el equivalente a dos (2) veces el avalúo catastral vigente.
+
+ARTÍCULO 20. REAJUSTE DEL CANON DE ARRENDAMIENTO.
+Cada doce (12) meses de ejecución del contrato bajo un mismo precio, el arrendador podrá incrementar el canon hasta en una proporción que no sea superior al ciento por ciento (100%) del incremento del índice de precios al consumidor del año calendario inmediatamente anterior, siempre que el nuevo canon no exceda lo previsto en el artículo 18.
+
+Nota del proyecto: ante cualquier duda de vigencia o alcance, consultar la fuente oficial enlazada arriba.
