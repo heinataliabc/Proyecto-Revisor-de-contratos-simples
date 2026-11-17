@@ -68,18 +68,18 @@ ContratoClaro es una herramienta de inteligencia artificial diseñada para reali
 Marca cada hito cuando lo termines. Los hitos siguen las sesiones del curso.
 
 - [x] **M0 — Descripción y plan** *(con Sesión 1)*: Partes 1 y 2 de este README completas.
-- [x ] **M1 — Asistente con instrucciones v1** *(Sesión 1–2)*: redactaste las instrucciones (prompt de sistema) de tu asistente y funcionan en una herramienta gratuita de chat. 
-- [ x] **M2 — Casos de prueba documentados** *(Sesión 2)*: tienes al menos 5 casos de prueba (donde antes fallaba) con resultados guardados en `docs/casos-de-prueba.md`.
-- [ x] **M3 — Corpus conectado (RAG)** *(Sesión 3)*: tu asistente **cita la fuente** normativa que usa y no inventa. Corpus cargado en `corpus/`.
-- [ x] **M4 — Interfaz web desplegada** *(Sesión 4)*: tu herramienta tiene **URL pública** (ver Parte 4) y tu primer usuario real la probó con evidencia.
-- [x ] **M5 — Análisis crítico y demo** *(Sesión 5)*: Parte 7 completada + presentación de 5 minutos.
+- [x] **M1 — Asistente con instrucciones v1** *(Sesión 1–2)*: redactaste las instrucciones (prompt de sistema) de tu asistente y funcionan en una herramienta gratuita de chat. 
+- [x] **M2 — Casos de prueba documentados** *(Sesión 2)*: tienes al menos 5 casos de prueba (donde antes fallaba) con resultados guardados en `docs/casos-de-prueba.md`.
+- [ ] **M3 — Corpus conectado (RAG)** *(Sesión 3)*: tu asistente **cita la fuente** normativa que usa y no inventa. Corpus cargado en `corpus/`.
+- [ ] **M4 — Interfaz web desplegada** *(Sesión 4)*: tu herramienta tiene **URL pública** (ver Parte 4) y tu primer usuario real la probó con evidencia.
+- [ ] **M5 — Análisis crítico y demo** *(Sesión 5)*: Parte 7 completada + presentación de 5 minutos.
 
 ### Bitácora de avance semanal
 | Semana | Qué hice | Enlace/captura | Dudas para la clase |
 | --- | --- | --- | --- |
 | 1 | Definí el problema jurídico, los usuarios, el alcance de la herramienta, el corpus normativo inicial y el plan de desarrollo. También instalé Git, cloné el repositorio y verifiqué que estuviera actualizado con `git pull`. | README.md actualizado en GitHub  | ¿Es adecuado limitar la primera versión a contratos de arrendamiento de vivienda urbana y compraventa de bienes muebles? ¿Qué herramienta recomienda el profesor para conectar el corpus normativo mediante RAG? |
 | 2 | En clase estudié el funcionamiento básico de los modelos de lenguaje (LLM), las alucinaciones, la tokenización, los vectores y los embeddings. Comprendí que el lenguaje se transforma en tokens y representaciones numéricas para poder ser procesado por el modelo. | Apuntes y actividad de clase | ¿Cómo podemos aplicar estos conceptos para reducir las alucinaciones jurídicas en ContratoClaro? |
-| 3 | Preparé el prompt de sistema v1, la matriz de 5 casos de prueba y la base técnica del RAG. Organicé el corpus en texto plano, agregué el script de indexación con FAISS, la aplicación Streamlit y la configuración segura para OpenRouter. Las pruebas reales y el cierre de M1, M2 y M3 siguen pendientes de ejecución. | `prompt-sistema-v1.md`, `docs/casos-de-prueba.md`, `corpus/`, `build_corpus.py`, `app.py`, `docs/como-ejecutar.md` | Ejecutar los casos, registrar las respuestas reales y verificar que el RAG cite la fuente y se niegue a inventar. |
+| 3 | Redacté y ajusté el prompt de sistema v1 de ContratoClaro y documenté cinco casos de prueba: dentro del alcance, límite, fuera del alcance y anti-alucinación. Los cinco casos fueron evaluados y el asistente respetó el alcance y la regla de no inventar. También organicé el corpus y preparé la base técnica del RAG. | `prompt-sistema-v1.md`, `docs/casos-de-prueba.md`, `corpus/`, `build_corpus.py`, `app.py` | Verificar la ejecución local completa del RAG con OpenRouter y registrar la evidencia de funcionamiento. |
 | 4 | Pendiente |  |  |
 | 5 | Pendiente |  |  |
 
@@ -196,9 +196,14 @@ Estas salvaguardas son **obligatorias** y hacen parte de la evaluación:
 
 Responde con total honestidad — aquí es donde demuestras tu criterio jurídico:
 
-1. **¿Dónde falla tu herramienta?** Describe 2 situaciones donde se equivoca o se queda corta.
-2. **¿Qué datos procesa?** Qué entra, qué se guarda, qué sale.
-3. **¿Por qué no reemplaza al abogado?** Argumenta en 5–8 frases.
+1. **¿Dónde falla tu herramienta?**  
+ContratoClaro puede quedarse corto cuando la consulta exige una interpretación jurídica compleja que no está contenida de forma suficiente en el corpus seleccionado. También puede fallar si el documento utiliza conceptos ambiguos, contiene hechos incompletos o requiere analizar normas distintas de la Ley 820 de 2003, el Código Civil seleccionado o la Ley 1581 de 2012. En esos casos la herramienta debe reconocer que no tiene base suficiente y evitar completar la respuesta con información inventada.
+
+2. **¿Qué datos procesa?**  
+La herramienta recibe la consulta que escribe el usuario y, cuando se use con contratos, únicamente debe trabajar con ejemplos ficticios o información anonimizada. El sistema busca fragmentos relevantes dentro del corpus normativo local y envía al modelo la pregunta junto con esos fragmentos. El proyecto no está diseñado para almacenar datos personales reales ni construir perfiles de los usuarios. La salida es una explicación jurídica preliminar, con alertas, referencias normativas y una advertencia académica.
+
+3. **¿Por qué no reemplaza al abogado?**  
+ContratoClaro realiza una revisión preliminar y limitada a un corpus pequeño. No conoce todos los hechos que pueden modificar la solución jurídica de un caso, ni reemplaza la valoración profesional de pruebas, documentos, antecedentes y riesgos. Una norma puede requerir interpretación sistemática con otras disposiciones o jurisprudencia que no estén cargadas en el proyecto. Además, una decisión como firmar, modificar o terminar un contrato puede tener consecuencias económicas y jurídicas que dependen del caso concreto. La herramienta sirve para orientar preguntas y detectar aspectos que merecen atención, pero no emite conceptos jurídicos definitivos. Por eso sus respuestas deben ser verificadas y, cuando exista un riesgo relevante, consultadas con un abogado.
 
 ---
 
