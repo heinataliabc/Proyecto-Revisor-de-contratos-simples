@@ -61,3 +61,11 @@ def construir_indice():
 
 if __name__ == "__main__":
     construir_indice()
+
+langchain
+langchain-core
+langchain-text-splitters
+langchain-huggingface[full]
+langchain-community
+faiss-cpu
+sentence-transformers
