@@ -64,10 +64,26 @@ export async function POST(request) {
       return Response.json({ error: "Escribe una consulta." }, { status: 400 });
     }
 
-    const apiKey = process.env.OPENROUTER_API_KEY;
+    const rawApiKey = process.env.OPENROUTER_API_KEY || "";
+    const apiKey = rawApiKey
+      .trim()
+      .replace(/^OPENROUTER_API_KEY\s*=\s*/i, "")
+      .replace(/^["']|["']$/g, "")
+      .trim();
+
     if (!apiKey) {
       return Response.json(
         { error: "La aplicación aún no tiene configurada la clave de OpenRouter en Vercel." },
+        { status: 500 }
+      );
+    }
+
+    if (!apiKey.startsWith("sk-or-")) {
+      return Response.json(
+        {
+          error:
+            "La variable OPENROUTER_API_KEY existe, pero su valor no parece ser una clave válida de OpenRouter. En Vercel pega únicamente la clave que empieza por sk-or-, sin escribir OPENROUTER_API_KEY= y sin comillas."
+        },
         { status: 500 }
       );
     }
