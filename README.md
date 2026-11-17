@@ -67,7 +67,7 @@ ContratoClaro es una herramienta de inteligencia artificial diseñada para reali
 
 Marca cada hito cuando lo termines. Los hitos siguen las sesiones del curso.
 
-- [x] **M0 — Descripción y plan**] **M0 — Descripción y plan** *(con Sesión 1)*: Partes 1 y 2 de este README completas.
+- [x] **M0 — Descripción y plan** *(con Sesión 1)*: Partes 1 y 2 de este README completas.
 - [ ] **M1 — Asistente con instrucciones v1** *(Sesión 1–2)*: redactaste las instrucciones (prompt de sistema) de tu asistente y funcionan en una herramienta gratuita de chat. 
 - [ ] **M2 — Casos de prueba documentados** *(Sesión 2)*: tienes al menos 5 casos de prueba (donde antes fallaba) con resultados guardados en `docs/casos-de-prueba.md`.
 - [ ] **M3 — Corpus conectado (RAG)** *(Sesión 3)*: tu asistente **cita la fuente** normativa que usa y no inventa. Corpus cargado en `corpus/`.
@@ -78,8 +78,8 @@ Marca cada hito cuando lo termines. Los hitos siguen las sesiones del curso.
 | Semana | Qué hice | Enlace/captura | Dudas para la clase |
 | --- | --- | --- | --- |
 | 1 | Definí el problema jurídico, los usuarios, el alcance de la herramienta, el corpus normativo inicial y el plan de desarrollo. También instalé Git, cloné el repositorio y verifiqué que estuviera actualizado con `git pull`. | README.md actualizado en GitHub  | ¿Es adecuado limitar la primera versión a contratos de arrendamiento de vivienda urbana y compraventa de bienes muebles? ¿Qué herramienta recomienda el profesor para conectar el corpus normativo mediante RAG? |
-| 2 | n clase estudié el funcionamiento básico de los modelos de lenguaje (LLM), las alucinaciones, la tokenización, los vectores y los embeddings. Comprendí que el lenguaje se transforma en tokens y representaciones numéricas para poder ser procesado por el modelo. | Apuntes y actividad de clase | ¿Cómo podemos aplicar estos conceptos para reducir las alucinaciones jurídicas en ContratoClaro? || 2 |  |  |
-| 3 | Pendiente |  |  |
+| 2 | En clase estudié el funcionamiento básico de los modelos de lenguaje (LLM), las alucinaciones, la tokenización, los vectores y los embeddings. Comprendí que el lenguaje se transforma en tokens y representaciones numéricas para poder ser procesado por el modelo. | Apuntes y actividad de clase | ¿Cómo podemos aplicar estos conceptos para reducir las alucinaciones jurídicas en ContratoClaro? |
+| 3 | Preparé el prompt de sistema v1, la matriz de 5 casos de prueba y la base técnica del RAG. Organicé el corpus en texto plano, agregué el script de indexación con FAISS, la aplicación Streamlit y la configuración segura para OpenRouter. Las pruebas reales y el cierre de M1, M2 y M3 siguen pendientes de ejecución. | `prompt-sistema-v1.md`, `docs/casos-de-prueba.md`, `corpus/`, `build_corpus.py`, `app.py`, `docs/como-ejecutar.md` | Ejecutar los casos, registrar las respuestas reales y verificar que el RAG cite la fuente y se niegue a inventar. |
 | 4 | Pendiente |  |  |
 | 5 | Pendiente |  |  |
 
