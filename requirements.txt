@@ -5,3 +5,6 @@ langchain-huggingface[full]
 langchain-community
 faiss-cpu
 sentence-transformers
+streamlit
+requests
+python-dotenv
