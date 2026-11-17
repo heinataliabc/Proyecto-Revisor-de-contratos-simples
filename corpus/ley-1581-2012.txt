@@ -1,21 +1,20 @@
 LEY 1581 DE 2012
 Protección de datos personales
 
+Fuente oficial:
+Departamento Administrativo de la Función Pública — Gestor Normativo
+https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=49981
+
 Corpus seleccionado para el proyecto académico ContratoClaro.
+Esta selección se usa como salvaguarda para el tratamiento de información de usuarios y para recordar que las pruebas deben emplear datos ficticios o anonimizados.
 
-Fuente oficial: Departamento Administrativo de la Función Pública - Gestor Normativo.
+ARTÍCULO 9. AUTORIZACIÓN DEL TITULAR.
+Sin perjuicio de las excepciones previstas en la ley, en el Tratamiento se requiere la autorización previa e informada del Titular, la cual deberá ser obtenida por cualquier medio que pueda ser objeto de consulta posterior.
 
-ALCANCE DEL CORPUS:
-Disposiciones relevantes sobre tratamiento de datos personales, autorización del titular, principios y deberes aplicables al manejo de información personal dentro del proyecto.
+ARTÍCULO 12. DEBER DE INFORMAR AL TITULAR.
+Al solicitar la autorización, el Responsable del Tratamiento debe informar de manera clara y expresa el tratamiento al cual serán sometidos los datos y su finalidad; el carácter facultativo de ciertas respuestas cuando correspondan a datos sensibles o de niñas, niños y adolescentes; los derechos del Titular; y la identificación y datos de contacto del Responsable del Tratamiento.
 
-ARTÍCULOS A INCLUIR:
-- Artículo 1: objeto.
-- Artículo 3: definiciones.
-- Artículo 4: principios para el tratamiento de datos personales.
-- Artículos 5 y 6: datos sensibles y tratamiento de datos sensibles.
-- Artículo 8: derechos de los titulares.
-- Artículo 9: autorización del titular.
-- Artículo 12: deber de informar al titular.
-- Artículos 17 y 18: deberes de responsables y encargados del tratamiento.
+SALVAGUARDA DEL PROYECTO.
+ContratoClaro no debe solicitar ni almacenar datos personales reales durante las pruebas académicas. Los casos de prueba deben usar situaciones ficticias, nombres inventados o información anonimizada.
 
-A continuación se reproduce el texto oficial seleccionado:
+Nota del proyecto: ante cualquier duda de vigencia o alcance, consultar la fuente oficial enlazada arriba.
